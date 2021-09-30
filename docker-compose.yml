@@ -12,6 +12,7 @@ services:
       dockerfile: ./docker/app/Dockerfile
     volumes:
       - ./src/:/var/www/html
+      - ./lib/:/var/www/lib
     # 環境変数を設定(.envに紐づく)
     environment:
       - DB_CONNECTION=mysql
